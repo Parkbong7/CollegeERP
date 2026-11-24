@@ -1,0 +1,33 @@
+{
+  "name": "college-erp-node-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "College ERP - Microservices Tier",
+  "scripts": {
+    "start": "npm run start:all",
+    "dev": "npm run start:all",
+    "start:gateway": "node ApiGateway-services/ApiGatewayServer.js",
+    "start:access": "node AccessManager-services/AccessManagerServer.js",
+    "start:auth": "node AccessManager-services/AccessManagerServer.js",
+    "start:master": "node MasterConfiguration-services/MasterConfigurationServer.js",
+    "start:student": "node Student-services/StudentServer.js",
+    "start:department": "node Department-services/DepartmentServer.js",
+    "start:all": "concurrently -n \"GATEWAY(5000),ACCESS(5001),MASTER(5002),STUDENT(5003),DEPT(5004)\" -c \"blue,green,magenta,yellow,cyan\" \"npm run start:gateway\" \"npm run start:access\" \"npm run start:master\" \"npm run start:student\" \"npm run start:department\""
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,111 @@
+========================================================================================================
+COLLEGE ERP - ALL LOGIN CREDENTIALS
+Login URL: http://localhost:5173/login/ABC
+Default Password for All: Admin@123
+========================================================================================================
+
+ROLE: STUDENT
+--------------------------------------------------------------------------------------------------------
+Name: Aarav Patel
+Mail ID: aarav.p@student.abccollege.edu
+Department: CSE
+Roll Number: CSE-2026-001 (Year 1)
+Password: Admin@123
+Access: Year Module & Personal Attendance (79% Attendance, Exam Eligible)
+
+Name: Vikram Singh
+Mail ID: vikram.s@student.abccollege.edu
+Department: ECE
+Roll Number: ECE-2026-001 (Year 1)
+Password: Admin@123
+Access: Year Module & Personal Attendance (86% Attendance, Exam Eligible)
+
+Name: Neha Sharma
+Mail ID: neha.s@student.abccollege.edu
+Department: CSE
+Roll Number: CSE-2025-001 (Year 2)
+Password: Admin@123
+Access: Year Module & Personal Attendance
+
+--------------------------------------------------------------------------------------------------------
+ROLE: STAFF / FACULTY
+--------------------------------------------------------------------------------------------------------
+Name: Dr. Arun Kumar
+Mail ID: staff.arun@abccollege.edu
+Department: CSE
+Designation: Assistant Professor (STF002)
+Password: Admin@123
+Access: Student Module, Year Module, Mark Attendance for CSE
+
+Name: Rajesh Kulkarni
+Mail ID: rajesh.k@abccollege.edu
+Department: ECE
+Designation: Associate Professor (STF005)
+Password: Admin@123
+Access: Student Module, Year Module, Mark Attendance for ECE
+
+Name: Sneha Verma
+Mail ID: sneha.verma@abccollege.edu
+Department: CSE
+Designation: Associate Professor (STF003)
+Password: Admin@123
+Access: Student Module, Year Module, Mark Attendance for CSE
+
+--------------------------------------------------------------------------------------------------------
+ROLE: HEAD OF DEPARTMENT (HOD)
+--------------------------------------------------------------------------------------------------------
+Name: Dr. Ramesh Sharma
+Mail ID: hod.cse@abccollege.edu
+Department: CSE
+Designation: Professor & HOD (CSE)
+Password: Admin@123
+Access: View-Only Across All Modules (Dashboard, Master, Students, Attendance)
+
+Name: Dr. Sunita Rao
+Mail ID: hod.ece@abccollege.edu
+Department: ECE
+Designation: Professor & HOD (ECE)
+Password: Admin@123
+Access: View-Only Across All Modules (Dashboard, Master, Students, Attendance)
+
+--------------------------------------------------------------------------------------------------------
+ROLE: SUPER ADMIN
+--------------------------------------------------------------------------------------------------------
+Name: System Administrator
+Mail ID: admin@abccollege.edu
+Department: CSE (or any)
+Password: Admin@123
+Access: Full System Access (Add, Edit, Delete, Staff Allocation, Enrollment, Attendance)
+========================================================================================================
+
+
+
+
+Sneha Verma (Staff / Faculty)
+Portal URL: http://localhost:5173/login/ABC
+Role Tab: Click Staff / Faculty
+Email / Username: sneha.verma@abccollege.edu (or sneha.verma)
+Department: CSE - Computer Science & Engineering
+Password: Admin@123
+
+
+1. Arun Kumar (Assistant Professor - CSE)
+Login Portal: http://localhost:5173/login/ABC
+Role Tab: Click Staff / Faculty
+Email / Username: staff.arun@abccollege.edu (or staff.arun)
+Department: CSE - Computer Science & Engineering
+Password: Admin@123
+
+2. James (Professor - CSE)
+Login Portal: http://localhost:5173/login/ABC
+Role Tab: Click Staff / Faculty
+Email / Username: james (or jamesdamnn@gmail.com)
+Department: CSE - Computer Science & Engineering
+Password: Admin@123
+
+3. Sneha Verma (Associate Professor - CSE)
+Login Portal: http://localhost:5173/login/ABC
+Role Tab: Click Staff / Faculty
+Email / Username: sneha.verma@abccollege.edu (or sneha.verma)
+Department: CSE - Computer Science & Engineering
+Password: Admin@123

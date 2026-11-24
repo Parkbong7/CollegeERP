@@ -1,0 +1,6 @@
+packages:
+  - "Application/*"
+  - "Middleware"
+  - "Node-services/*"
+allowBuilds:
+  esbuild: true

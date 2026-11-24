@@ -1,0 +1,36 @@
+{
+  "name": "college-erp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "College ERP - Microservices Architecture Institutional Management System (aligned with Service-ERP standard)",
+  "workspaces": [
+    "Application/*",
+    "Middleware",
+    "Node-services/*"
+  ],
+  "scripts": {
+    "start": "npm run start:backend",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "concurrently -n \"GATEWAY(5000),ACCESS(5001),MASTER(5002),STUDENT(5003),DEPT(5004),MIDDLEWARE(4500)\" -c \"blue,green,magenta,yellow,cyan,gray\" \"npm run start:gateway\" \"npm run start:access\" \"npm run start:master\" \"npm run start:student\" \"npm run start:department\" \"npm run start:middleware\"",
+    "start:gateway": "node Node-services/ApiGateway-services/ApiGatewayServer.js",
+    "start:access": "node Node-services/AccessManager-services/AccessManagerServer.js",
+    "start:auth": "node Node-services/AccessManager-services/AccessManagerServer.js",
+    "start:master": "node Node-services/MasterConfiguration-services/MasterConfigurationServer.js",
+    "start:student": "node Node-services/Student-services/StudentServer.js",
+    "start:department": "node Node-services/Department-services/DepartmentServer.js",
+    "start:middleware": "cd Middleware && node server.js",
+    "start:frontend": "concurrently -n \"SHELL(5173),MASTER(5174),DEPT(5175),STUDENT(5176)\" -c \"magenta,blue,cyan,yellow\" \"pnpm run start:app-shell\" \"pnpm run start:app-master\" \"pnpm run start:app-department\" \"pnpm run start:app-student\"",
+    "start:app-shell": "cd Application/shell && pnpm dev",
+    "start:app-master": "cd Application/master && pnpm dev",
+    "start:app-department": "cd Application/department && pnpm dev",
+    "start:app-student": "cd Application/student && pnpm dev",
+    "tenant:add": "node scripts/tenant-onboard.js",
+    "tenant:migrate": "node scripts/tenant-migrate-all.js up",
+    "tenant:migrate:status": "node scripts/tenant-migrate-all.js status",
+    "build:all": "cd Application/shell && pnpm build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "license": "ISC"
+}
